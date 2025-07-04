@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styile.css">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <header>
+        <div class="container header">
+            <h1>Escola Virtual</h1>
+            <h2>Formulário de Pré-Matrícula</h2>
+        </div>
+        <div class="bars"></div>
+    </header>
+
+    <section id="sec1">
+        <div class="container sec1">
+
+            <p>Dados pessoais:</p>
+            <div class="container upper">
+
+                <div class="label_upper" id="aluno">
+                    <label> Nome do Aluno: 
+                        <input type="text" name="name" minlength="2" required>
+                    </label>
+                </div>
+
+                <div class="label_upper" id="nasc">
+                    <label> Nascimento (dd/mm/aaaa): 
+                        <input type="date" name="birthdate" required>
+                    </label>
+                </div>
+
+                <div class="label_upper"  id="mae">
+                    <label> Nome da Mãe: 
+                        <input type="text" name="nameMother" minlength="2" required>
+                    </label>
+                </div>
+
+                <div class="label_upper" id="pai" >
+                    <label> Nome do Pai: 
+                        <input type="text" name="nameFather" minlength="2" required>
+                    </label>
+                </div>
+
+                <div class="contacts">
+
+                    <label> Telefone: DDD  
+                        ( <input class="reduce"  type="tel" name="ddd" minlength="3" required> )   
+                    </label>                
+
+                    <label> Tel: 
+                        <input id="aumenta" type="tel" name="phone" minlength="9" required>
+                    </label>                    
+
+                    <label> Ramal: 
+                        <input class="reduce" type="tel" name="ramal">
+                    </label>
+                    
+                </div>
+
+                <div class="label_upper" id="email" >
+                    <label> E-mail: 
+                        <input type="email" name="email">
+                    </label>
+                </div>
+            </div>    
+
+        </div>
+    </section>
+
+    <section id="sec2">
+        <div class="container sec2">
+            <p>Informaçoes de Matricula:</p>
+            <div class="container bottom">
+
+                <div class="label_down_left">
+                    <label> Série: <br>
+                        <select>
+                            <option value="pre" selected>pré-escolar</option>
+                            <option value="first">Fundamental</option>
+                            <option value="second">Ensino Médio</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div class="label_down_centre">
+                    <label> Turno: </label>
+                    <br>
+                    <div class="options">
+                        <div id="manha">
+                            <label>Manhã
+                                <input type="radio" name="turno">
+                            </label>
+                        </div>
+
+                        <div id="tarde">
+                            <label>Tarde
+                                <input type="radio" name="turno">
+                            </label>
+                        </div>
+                    </div>        
+                </div>                            
+
+                <div class="label_down_right">
+                    <label>Atividades Extracurriculares: </label>
+                        <br>
+                    <div class="options_checkbox">
+                        <div id="informatica">
+                            <label class="checkbox">                                
+                                <input type="radio" name="grupo_opcoes" value="opcao1">
+                                Informática
+                            </label>
+                        </div>
+                
+                        <div id="musica">
+                            <label class="checkbox">                                
+                                <input type="radio" name="grupo_opcoes" value="opcao2">
+                                Música
+                            </label>
+                        </div>
+
+                        <div id="balet">
+                            <label class="checkbox">                                
+                                <input type="radio" name="grupo_opcoes" value="opcao3">
+                                Balét
+                            </label>
+                        </div>
+
+                        <div id="pintura">
+                            <label class="checkbox">                                
+                                <input type="radio" name="grupo_opcoes" value="opcao4">
+                                Pintura
+                            </label>
+                        </div>
+
+                        <div id="judo">
+                            <label class="checkbox">                                
+                                <input type="radio" name="grupo_opcoes" value="opcao5">
+                                Judô
+                            </label>
+                        </div>
+
+                        <div id="futebol">
+                            <label class="checkbox">                                
+                                <input type="radio" name="grupo_opcoes" value="opcao6">
+                                Futebol
+                            </label>
+                        </div>
+
+                    </div>                   
+
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <footer>
+        <div class="container footer">
+            <div class="button_left">
+                <button type="submit">
+                    <a href="">Envar Formulário</a>
+                </button>
+            </div>
+
+            <div class="button_right">
+                <button type="submit">
+                    <a href="">Limpar Campos</a>
+                </button>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
